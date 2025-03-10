@@ -1,0 +1,47 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/**************** header ******************/
+header {
+    /* background-color: red; */
+    padding: 28px 19px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__titulo {
+    /* background-color: olivedrab; */
+    display: flex;
+    flex-direction: column;
+}
+
+.header__titulo h1 {
+    /* background-color: violet; */
+    font-size: 20px;
+    color: var(--color-5);
+    font-weight: normal;
+    font-family: "EncodeSans-Bold";
+}
+
+.header__titulo h3 {
+    /* background-color: blueviolet; */
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--color-2);
+    font-family: "EncodeSans-Regular";
+}
+
+header img {
+    width: 32px;
+    height: 32px;
+    object-position: 40% 25% ;
+    border-radius: 32px;
+    border-color: var(--color-5);
+    border: 2px solid;
+}
