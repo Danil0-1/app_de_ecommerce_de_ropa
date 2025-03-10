@@ -248,3 +248,95 @@ main{
     inset: 0;
     margin: auto;
 }
+
+
+.producto1[type="checkbox"]{
+    position: relative;
+    appearance: none;
+    width: 30px;
+    background: url(../storage/img/home/heart.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    top: -200px;
+    right: 20px;
+    z-index: 500;
+}
+
+.producto1:checked::before{
+    content: "";
+    width: 25px;    
+    height: 25px;
+    background-image: url(../storage/img/home/heartBlanco.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+}
+
+.producto2[type="checkbox"]{
+    position: relative;
+    appearance: none;
+    width: 30px;
+    background: url(../storage/img/home/heartBlanco.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    top: -280px;
+    right: 20px;
+    z-index: 500;
+}
+
+.producto2:checked::before{
+    content: "";
+    width: 25px;    
+    height: 25px;
+    background-image: url(../storage/img/home/heart.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+}
+
+
+.article__contenedora a{
+    height: 130px;
+    padding: 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+.article__contenedora a img{
+    border-radius: 12px; 
+    width: 100%;
+    object-fit: cover; 
+}
+
+.article__contenedora2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -30px;
+    padding-top: 10px;
+}
+.article__contenedora2 a img{
+    border-radius: 12px; 
+    margin-top: 0px;
+    width: 100%;
+    z-index: -100;
+    object-fit: cover; 
+}
+.article__contenedora3 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+.article__contenedora3 a img{
+    border-radius: 12px; 
+    margin-top: 0px;
+    width: 80%;
+    z-index: -100;
+    object-fit: cover; 
+}
