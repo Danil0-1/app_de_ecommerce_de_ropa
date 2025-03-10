@@ -340,3 +340,70 @@ main{
     z-index: -100;
     object-fit: cover; 
 }
+
+.div__informacion {
+    /* background: violet; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 11px;
+    font-family: "EncodeSans-SemiBold";
+    gap: 2px;
+}
+
+.div__informacion2 {
+    /* background: violet; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 11px;
+    margin-top: -100px;
+    font-family: "EncodeSans-SemiBold";
+    gap: 2px;
+}
+.precio {
+    font-size: 20px; 
+    font-weight: bold;
+    color: var(--color-5);
+    display: block;
+    margin-top: 5px;
+}
+
+.precio-calificacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.div__informacion strong{
+    font-family: "EncodeSans-SemiBold"; 
+    color: var(--color-5);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.div__informacion p{
+   font-family: "EncodeSans-Regular";
+   color: var(--color-2);
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   font-size: 11px;
+   margin-top: 8px;
+}
+.div__informacion2 strong{
+    font-family: "EncodeSans-SemiBold"; 
+    color: var(--color-5);
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 100px;
+    text-overflow: ellipsis;
+}
+.div__informacion2 p{
+   font-family: "EncodeSans-Regular";
+   color: var(--color-2);
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   font-size: 11px;
+   margin-top: 8px;
+}
