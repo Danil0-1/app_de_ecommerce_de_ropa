@@ -164,3 +164,38 @@ li:active {
 li:active a {
     color: var(--color-4);
 }
+
+/******************************************/
+/**************** main ******************/
+main{
+    padding: 41px 19px 0px;
+}
+.section__productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.article__contenedora {
+    width: 47%;
+    margin-bottom: 5%;
+    height: 225px;
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: none;
+    position: relative;
+}
+
+.article__contenedora::after{
+    content: " ";
+    width: 90px;
+    height: 5px;
+    backdrop-filter: invert(10px);
+    background: var(--color-shadow-1);
+    border-radius: 100%;
+    position: absolute;
+    z-index: 5;
+    inset: 0;
+    margin: auto;
+}
