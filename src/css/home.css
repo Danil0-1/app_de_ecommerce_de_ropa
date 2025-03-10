@@ -45,3 +45,48 @@ header img {
     border-color: var(--color-5);
     border: 2px solid;
 }
+
+/******************************************/
+/**************** nav ******************/
+
+
+.form__busqueda {
+    /* background: blue; */
+    padding: 19px 19px 41px 19px;
+    overflow: hidden;
+    display: flex;
+    gap: 13px;
+    justify-content: space-between;
+}
+
+.input__logo {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input__logo::before {
+    /* background: orange; */
+    content: url(../storage/img/home/Main\ Icon.png);
+    position: absolute;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+.form__busqueda input[type="text"] {
+    box-sizing: content-box;
+    flex: 1;
+    height: 100%;
+    font-family: "EncodeSans-Regular";
+    font-size: 18px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid var(--color-6);
+    padding: 0 10px 0 40px;
+}
+
+.form__busqueda input[type="text"]::placeholder {
+    color: var(--color-6);
+}
