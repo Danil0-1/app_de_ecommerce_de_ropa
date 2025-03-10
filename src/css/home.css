@@ -90,3 +90,40 @@ header img {
 .form__busqueda input[type="text"]::placeholder {
     color: var(--color-6);
 }
+
+.input__filtro {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__filtro::after { 
+    content: url(../storage/img/home/Filter.png);
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.form__busqueda input[type="submit"] {
+    flex: 1;
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: var(--color-1);
+}
+
+.nav__categoria li img {
+    margin-right: 8px; 
+}
+
+.nav__categoria {
+    /* background: green; */
+    margin: 0px 19px 0;
+    display: flex;
+    overflow-x: scroll;
+    gap: 14px;
+}
