@@ -1,0 +1,39 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fondo GIF */
+body {
+    background: url('../storage/img/splashscreen/Gif1.gif') no-repeat center center;
+    background-size: cover;
+}
+
+.header__splash {
+    position: relative;
+    z-index: 1;
+    margin-top: 400px; 
+}
+
+/* Texto con enlace */
+.splash-link {
+    font-size: 70px;
+    font-weight: normal;
+    background: linear-gradient(900deg, #ffffff, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
