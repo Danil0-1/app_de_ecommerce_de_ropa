@@ -1,0 +1,227 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 19px;
+    z-index: 10; 
+}
+
+.letter{
+    font-family: "EncodeSans-Regular";
+    color: var(--color-1);
+    padding-left: 19px;
+
+}
+.back img, .heart img {
+    width: 70px; 
+    height: 70px;
+}
+
+.detail-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.detail {
+    width: 400px;  
+    height: 400px;  
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+
+
+.rating-time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "EncodeSans-Regular";
+    font-size: 15px;
+    color: var(--color-2);
+    padding-left: 19px;
+    margin-bottom: 10px;
+}
+
+.rating-time img {
+    width: 16px;
+    height: 16px;
+}
+
+.product-details {
+    font-family: "EncodeSans-Regular";
+    text-align: left;
+    color: var(--color-3);
+    padding: 0px 19px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.size-selection, .color-selection {
+    padding: 10px 19px;
+}
+
+.size-selection h3, .color-selection h3 {
+    font-size: 16px;
+    font-family: "EncodeSans-Bold";
+    color: var(--color-1);
+    margin-bottom: 8px
+}
+
+.color-selection h3 {
+    margin-top: -80px;
+    margin-left: 230px;
+}
+
+.sizes {
+    display: flex;
+    gap: 10px;
+}
+
+.sizes button {
+    border: 1px solid var(--color-2);
+    background-color: var(--color-4);
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sizes button.selected {
+    background-color: var(--color-5);
+    color: var(--color-4);
+    border: none;
+}
+
+.color-and-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 19px;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 230px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color-option.gray { background-color: var(--color-3); }
+.color-option.black { background-color: var(--color-2); }
+.color-option.dark-gray { background-color: var(--color-5); }
+
+
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 240px;
+    margin-top: -240px;
+}
+
+.hr{
+    margin-top: 20px;
+}
+.heart1[type="checkbox"]{
+    appearance: none;
+    width: 55px;
+    background: url(../storage/img/detail/heartdetail.png);
+    background-repeat: no-repeat;
+    height: 50px;
+}
+
+.heart1:checked::before{
+    content: "";
+    width: 70px;
+    height: 50px;
+    background-image: url(../storage/img/detail/heartBlanco.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 11px 7px;
+    display: block;
+}
+.count {
+    width: auto;
+    min-width: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-3);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: var(--color-4);
+    color: var(--color-5);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: center;
+    padding: 20px 19px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+.total-price a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background-color: var(--color-5);
+    color: var(--color-4);
+    font-family: "EncodeSans-Bold";
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.Views {
+    text-decoration: none;
+    color: var(--color-7);
+}
+
+.Views1 {
+    text-decoration: none;
+    color: var(--color-5);
+}
