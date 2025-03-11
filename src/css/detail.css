@@ -137,3 +137,72 @@
 .hr{
     margin-top: 20px;
 }
+.heart1[type="checkbox"]{
+    appearance: none;
+    width: 55px;
+    background: url(../storage/img/detail/heartdetail.png);
+    background-repeat: no-repeat;
+    height: 50px;
+}
+
+.heart1:checked::before{
+    content: "";
+    width: 70px;
+    height: 50px;
+    background-image: url(../storage/img/detail/heartBlanco.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 11px 7px;
+    display: block;
+}
+.count {
+    width: auto;
+    min-width: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-3);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: var(--color-4);
+    color: var(--color-5);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: center;
+    padding: 20px 19px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+.total-price a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background-color: var(--color-5);
+    color: var(--color-4);
+    font-family: "EncodeSans-Bold";
+    font-size: 18px;
+    text-decoration: none;
+}
