@@ -206,3 +206,13 @@
     font-size: 18px;
     text-decoration: none;
 }
+
+.Views {
+    text-decoration: none;
+    color: var(--color-7);
+}
+
+.Views1 {
+    text-decoration: none;
+    color: var(--color-5);
+}
