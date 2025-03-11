@@ -34,3 +34,28 @@
     height: auto;
     border-radius: 10px;
 }
+
+.rating-time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "EncodeSans-Regular";
+    font-size: 15px;
+    color: var(--color-2);
+    padding-left: 19px;
+    margin-bottom: 10px;
+}
+
+.rating-time img {
+    width: 16px;
+    height: 16px;
+}
+
+.product-details {
+    font-family: "EncodeSans-Regular";
+    text-align: left;
+    color: var(--color-3);
+    padding: 0px 19px;
+    font-size: 16px;
+    line-height: 1.7;
+}
