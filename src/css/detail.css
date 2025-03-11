@@ -1,0 +1,36 @@
+@import url(variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 19px;
+    z-index: 10; 
+}
+
+.back img, .heart img {
+    width: 70px; 
+    height: 70px;
+}
+
+.detail-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.detail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
