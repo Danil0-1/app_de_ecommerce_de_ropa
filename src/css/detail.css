@@ -59,3 +59,38 @@
     font-size: 16px;
     line-height: 1.7;
 }
+
+.size-selection, .color-selection {
+    padding: 10px 19px;
+}
+
+.size-selection h3, .color-selection h3 {
+    font-size: 16px;
+    font-family: "EncodeSans-Bold";
+    color: var(--color-1);
+    margin-bottom: 8px
+}
+
+.color-selection h3 {
+    margin-top: -80px;
+    margin-left: 230px;
+}
+
+.sizes {
+    display: flex;
+    gap: 10px;
+}
+
+.sizes button {
+    border: 1px solid var(--color-2);
+    background-color: var(--color-4);
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sizes button.selected {
+    background-color: var(--color-5);
+    color: var(--color-4);
+    border: none;
+}
