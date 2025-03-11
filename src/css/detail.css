@@ -18,6 +18,12 @@
     z-index: 10; 
 }
 
+.letter{
+    font-family: "EncodeSans-Regular";
+    color: var(--color-1);
+    padding-left: 19px;
+
+}
 .back img, .heart img {
     width: 70px; 
     height: 70px;
